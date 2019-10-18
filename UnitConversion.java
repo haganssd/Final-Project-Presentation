@@ -6,22 +6,220 @@ public class UnitConversion {
 
         Scanner input = new Scanner(System.in);
 
-    //Ask user to select metric or standard system
+    //Ask user to select metric or standard system - I DON"T THINK THIS IS NEEDED? THOUGHTS?****
 
     //User enter number
-        System.out.print("Enter the number to be converted: ");
+        System.out.print("Enter original number to be converted: ");
+        double begValue = input.nextDouble();
 
-        String begValue = input.nextLine();
-
-    //User enter original unit of measure:
         //User enter unit
-        System.out.print("Enter original unit of measure: ");
-        String  = input.nextLine();
+        System.out.print("Select original unit of measure: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  5 - inch  6 - foot  7 - yard  8 - mile");
+        int begUnit = input.nextInt();
+        if (begUnit < 1 || begUnit > 8 ){
+            System.out.print("Invalid option");
+            //how to loop back to question again?
+        }
 
         //User enter unit to convert to
+        System.out.print("Select unit of measure to convert to: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  5 - inch  6 - foot  7 - yard  8 - mile");
+        int convUnit = input.nextInt();
 
-    //User enter number to be converted
-
+        if (begUnit < 1 || begUnit > 8 ){
+            System.out.print("Invalid option");
+            //how to loop back to question again?
+        }
+        if (begUnit = 1 && convUnit = 1){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 1 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 1 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 1 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 1 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 1 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 1 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 1 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 2){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 2 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 2 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 3){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 3 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 3 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 4){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 4 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 4 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 5){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 5 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 5 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 6){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 6 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 6 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 7 && convUnit = 7){
+            System.out.print(begValue);
+        }
+        else if (begUnit = 7 && convUnit = 8){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 1){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 2){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 3){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 4){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 5){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 6){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 7){
+            double endValue = miliToCenti(double begUnit, double convUnit);
+        }
+        else if (begUnit = 8 && convUnit = 8){
+            System.out.print(begValue);
+        }
     }
 
     public static void units(){
@@ -66,7 +264,6 @@ public class UnitConversion {
     public static double miliToMile(){
 
     }
-
 
     //centimeter conversion
     public static double centiToMilli(){
@@ -130,7 +327,6 @@ public class UnitConversion {
     public static double kiloToInches(){
 
     }
-
 
     public static double kiloToFeet(){
 
