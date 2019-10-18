@@ -27,10 +27,14 @@ public class UnitConversion {
             System.out.print("Invalid option");
             //how to loop back to question again?
         }
+        else {
+            convert(begUnit, double endValue, convUnit, begValue);
+        }
+
 
     }
 
-    public static void convert(double begUnit, double convUnit, double begValue){
+    public static void convert(double begUnit, double endValue, double convUnit, double begValue){
 
         if (begUnit == 1 && convUnit == 1){
             System.out.print(begValue);
