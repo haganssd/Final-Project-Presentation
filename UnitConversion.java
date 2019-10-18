@@ -254,101 +254,129 @@ public class UnitConversion {
      **********************************************************************/
 
     //millimeter conversions
-    public static double miliToCenti(){
-        int conversionValue =
+    public static double miliToCenti(double begValue){
+        double endValue = begValue / 10;
+        return endValue;
     }
-    public static double miliToMeter(){
-
+    public static double miliToMeter(double begValue){
+        double endValue = begValue /1000;
+        return endValue;
     }
-    public static double miliToKilo(){
-
+    public static double miliToKilo(double begValue){
+        double endValue = begValue / 10000;
+        return endValue;
     }
-    public static double miliToInch(){
-
+    public static double miliToInch(double begValue){
+        double endValue = begValue / 25.4;
+        return endValue;
     }
-    public static double miliToFeet(){
-
+    public static double miliToFeet(double begValue){
+        double endValue = begValue / 304.8;
+        return endValue;
     }
-    public static double miliToYard(){
-
+    public static double miliToYard(double begValue){
+        double endValue = begValue / 914.4;
+        return endValue;
     }
-    public static double miliToMile(){
-
+    public static double miliToMile(double begValue){
+        double endValue = begValue / 1069000000;
+        return endValue;
     }
 
     //centimeter conversion
-    public static double centiToMilli(){
-
+    public static double centiToMilli(double begValue){
+        double endValue = begValue * 10;
+        return endValue;
     }
-    public static double centiToMeter(){
-
+    public static double centiToMeter(double begValue){
+        double endValue = begValue * .10;
+        return endValue;
     }
-    public static double centiToKilo(){
-
+    public static double centiToKilo(double begValue){
+        double endValue = begValue * .01;
+        return endValue;
     }
-    public static double centiToInch(){
-
+    public static double centiToInch(double begValue){
+        double endValue = begValue / 2.54;
+        return endValue;
     }
-    public static double centiToFeet(){
-
+    public static double centiToFeet(double begValue){
+        double endValue = begValue / 30.48;
+        return endValue;
     }
-    public static double centiToYard(){
-
+    public static double centiToYard(double begValue){
+        double endValue = begValue / 91.44;
+        return endValue;
     }
-    public static double centiToMile(){
-
+    public static double centiToMile(double begValue){
+        double endValue = begValue / 160934.4;
+        return endValue;
     }
 
     //meter conversion
-    public static double meterToMilli(){
-
+    public static double meterToMilli(double begValue){
+        double endValue = begValue * 1000;
+        return endValue;
     }
-    public static double meterToCenti(){
-
+    public static double meterToCenti(double begValue){
+        double endValue = begValue * 100;
+        return endValue;
     }
-    public static double meterToKilo(){
-
+    public static double meterToKilo(double begValue){
+        double endValue = begValue / 1000;
+        return endValue;
     }
-    public static double meterToInch(){
-
+    public static double meterToInch(double begValue){
+        double endValue = begValue * 39.37;
+        return endValue;
     }
-    public static double meterToFeet(){
-
+    public static double meterToFeet(double begValue){
+        double endValue = begValue * 3.218;
+        return endValue;
     }
-    public static double meterToYard(){
-
+    public static double meterToYard(double begValue){
+        double endValue = begValue * 1.049;
+        return endValue;
     }
-    public static double meterToMile(){
-
+    public static double meterToMile(double begValue){
+        double endValue = begValue / 1609.344;
+        return endValue;
     }
 
     //kilo conversion
-    public static double kiloToMilli(){
-
+    public static double kiloToMilli(double begValue){
+        double endValue = begValue * 1000000;
+        return endValue;
     }
 
-    public static double kiloToCenti(){
-
+    public static double kiloToCenti(double begValue){
+        double endValue = begValue * 100000;
+        return endValue;
     }
 
-    public static double kiloToMeter(){
-
+    public static double kiloToMeter(double begValue){
+        double endValue = begValue / 1000;
+        return endValue;
     }
 
-    public static double kiloToInches(){
-
+    public static double kiloToInches(double begValue){
+        double endValue = begValue * 39370.079;
+        return endValue;
     }
 
-    public static double kiloToFeet(){
-
+    public static double kiloToFeet(double begValue){
+        double endValue = begValue * 3280.84;
+        return endValue;
     }
 
-    public static double kiloToYard(){
-
+    public static double kiloToYard(double begValue){
+        double endValue = begValue * 1093.613;
+        return endValue;
     }
 
-    public static double kiloToMile(){
-
+    public static double kiloToMile(double begValue){
+        double endValue = begValue / 1.609;
+        return endValue;
     }
 
     /******************************************************************
@@ -356,110 +384,138 @@ public class UnitConversion {
      *******************************************************************/
 
     //inch conversion
-    public static double inchtoMilli(){
-
+    public static double inchtoMilli(double begValue){
+        double endValue = begValue * 25.4;
+        return endValue;
     }
-    public static double inchToCenti(){
-
+    public static double inchToCenti(double begValue){
+        double endValue = begValue * 2.54;
+        return endValue;
     }
-    public static double inchToMeter(){
-
+    public static double inchToMeter(double begValue){
+        double endValue = begValue /39.37;
+        return endValue;
     }
-    public static double inchToKilo(){
-
+    public static double inchToKilo(double begValue){
+        double endValue = begValue /39370.079;
+        return endValue;
     }
-    public static double inchToFeet(){
-
+    public static double inchToFeet(double begValue){
+        double endValue = begValue / 12;
+        return endValue;
     }
-    public static double inchToYard(){
-
+    public static double inchToYard(double begValue){
+        double endValue = begValue / 36;
+        return endValue;
     }
-    public static double inchToMile(){
-
+    public static double inchToMile(double begValue){
+        double endValue = begValue / 13360;
+        return endValue;
     }
 
     //feet conversion
-    public static double feetToMilli(){
-
+    public static double feetToMilli(double begValue){
+        double endValue = begValue * 304.8;
+        return endValue;
     }
-    public static double feetToCenti(){
-
+    public static double feetToCenti(double begValue){
+        double endValue = begValue * 30.48;
+        return endValue;
     }
-    public static double feetToMeter(){
-
+    public static double feetToMeter(double begValue){
+        double endValue = begValue / .3048;
+        return endValue;
     }
-    public static double feetToKilo(){
-
+    public static double feetToKilo(double begValue){
+        double endValue = begValue / 3280.84;
+        return endValue;
     }
-    public static double feetToInch(){
-
+    public static double feetToInch(double begValue){
+        double endValue = begValue * 12;
+        return endValue;
     }
 
-    public static double feetToYard(){
-
+    public static double feetToYard(double begValue){
+        double endValue = begValue / 3;
+        return endValue;
     }
-    public static double feetToMile(){
-
+    public static double feetToMile(double begValue){
+        double endValue = begValue / 5280;
+        return endValue;
     }
 
 
     //yard conversion
-    public static double yardToMilli(){
-
+    public static double yardToMilli(double begValue){
+        double endValue = begValue * 914.4;
+        return endValue;
     }
 
-    public static double yardToCenti(){
-
+    public static double yardToCenti(double begValue){
+        double endValue = begValue * 91.44;
+        return endValue;
     }
 
-    public static double yardToMeter(){
-
+    public static double yardToMeter(double begValue){
+        double endValue = begValue / 1.094;
+        return endValue;
     }
 
-    public static double yardToKilo(){
-
+    public static double yardToKilo(double begValue){
+        double endValue = begValue / 1093.613;
+        return endValue;
     }
 
-    public static double yardToInch(){
-
+    public static double yardToInch(double begValue){
+        double endValue = begValue * 36;
+        return endValue;
     }
 
-    public static double yardToFeet(){
-
+    public static double yardToFeet(double begValue){
+        double endValue = begValue * 3;
+        return endValue;
     }
 
-    public static double yardToMile(){
-
+    public static double yardToMile(double begValue){
+        double endValue = begValue / 1760;
+        return endValue;
     }
 
 
     //mile conversion
-    public static double mileToMilli(){
-
+    public static double mileToMilli(double begValue){
+        double endValue = begValue * 1609000000;
+        return endValue;
     }
 
-    public static double mileToCenti(){
-
+    public static double mileToCenti(double begValue){
+        double endValue = begValue * 160934.4;
+        return endValue;
     }
 
-    public static double mileToMeter(){
-
+    public static double mileToMeter(double begValue){
+        double endValue = begValue * 1609.344;
+        return endValue;
     }
 
-    public static double mileToKilo(){
-
+    public static double mileToKilo(double begValue){
+        double endValue = begValue * 1.60934;
+        return endValue;
     }
 
-    public static double mileToInch(){
-
+    public static double mileToInch(double begValue){
+        double endValue = begValue * 63360;
+        return endValue;
     }
 
-    public static double mileToFeet(){
-
+    public static double mileToFeet(double begValue){
+        double endValue = begValue * 5280;
+        return endValue;
     }
 
-    public static double mileToYard(){
-
+    public static double mileToYard(double begValue){
+        double endValue = begValue * 1760;
+        return endValue;
     }
 
 }
