@@ -5,9 +5,17 @@ public class UnitConversion {
     Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        
+
+    //User enter unit
+
+    //User enter number
+
+    //User enter unit to convert to
+
+    //User enter number to be converted
 
     }
 
+    
 
 }
