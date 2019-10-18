@@ -6,12 +6,12 @@ public class UnitConversion {
 
         Scanner input = new Scanner(System.in);
 
-    //Ask user to select metric or standard system
+    //Ask user to select metric or standard system - I DON"T THINK THIS IS NEEDED? THOUGHTS?****
 
     //User enter number
         System.out.print("Enter the number to be converted: ");
-
         String begValue = input.nextLine();
+
 
     //User enter original unit of measure:
         //User enter unit
@@ -66,7 +66,6 @@ public class UnitConversion {
     public static double miliToMile(){
 
     }
-
 
     //centimeter conversion
     public static double centiToMilli(){
@@ -130,7 +129,6 @@ public class UnitConversion {
     public static double kiloToInches(){
 
     }
-
 
     public static double kiloToFeet(){
 
