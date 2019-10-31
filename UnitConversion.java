@@ -4,30 +4,38 @@ public class UnitConversion {
 
     public static void main(String[] args) {
 
+        //TODO: Create GUI
+
         Scanner input = new Scanner(System.in);
 
         //Ask user to select metric or standard system - I DON"T THINK THIS IS NEEDED? THOUGHTS?****
+        double begValue;
+        double begUnit;
 
-        //User enter number
-        System.out.print("Enter original number to be converted: ");
-        double begValue = input.nextDouble();
+        do{
+            //User enter number
+            System.out.print("Enter original number to be converted: ");
+            begValue = input.nextDouble();
 
-        //User enter unit
-        System.out.print("Select original unit of measure: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  5 - inch  6 - foot  7 - yard  8 - mile");
-        input.nextLine();
-        double begUnit = input.nextDouble();
+            //User enter unit
+            System.out.print("Select original unit of measure: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  " +
+                    "5 - inch  6 - foot  7 - yard  8 - mile");
+            input.nextLine();
+            begUnit = input.nextDouble();
 
-        if (begUnit < 1 || begUnit > 8) {
-            System.out.print("Invalid option");
-            //how to loop back to question again?
-        }
+            if (begUnit < 1 || begUnit > 8) {
+                System.out.print("Invalid option");
+            }
+
+        } while (begUnit < 1 || begUnit > 8);
 
         //User enter unit to convert to
-        System.out.print("Select unit of measure to convert to: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  5 - inch  6 - foot  7 - yard  8 - mile");
+        System.out.print("Select unit of measure to convert to: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  " +
+                "5 - inch  6 - foot  7 - yard  8 - mile");
         double convUnit = input.nextDouble();
         if (begUnit < 1 || begUnit > 8) {
             System.out.print("Invalid option");
-            //how to loop back to question again?
+            //TODO: how to loop back to question again?
         }
         else {
             convert(begUnit, convUnit, begValue);
@@ -38,9 +46,9 @@ public class UnitConversion {
 
     }
 
-    public static double convert(double begUnit, double convUnit, double begValue){
+    private static double convert(double begUnit, double convUnit, double begValue){
 
-         double endValue;
+        double endValue = 0;
 
         if (begUnit == 1 && convUnit == 1){
             endValue = begUnit;
@@ -292,33 +300,29 @@ public class UnitConversion {
         else if (begUnit == 8 && convUnit == 8){
             System.out.print(begValue);
         }
-        else{
-            //what do we put here??
-        }
+        return endValue;
     }
 
-    public static void units(){
-
-        //create variables for each unit of measure
-        double millimeter = 0;
-        double centimeter = 0;
-        double meter = 0;
-        double kilometer = 0;
-        double inch = 0;
-        double foot = 0;
-        double yard = 0;
-        double mile = 0;
-
-
-
-    }
+   /* NOT SURE THIS IS NEEDED?
+    *
+    * **** public static void units(){
+    * //create variables for each unit of measure
+    *   double millimeter = 0;
+    *   double centimeter = 0;
+    *   double meter = 0;
+    *   double kilometer = 0;
+    *   double inch = 0;
+    *   double foot = 0;
+    *   double yard = 0;
+    *   double mile = 0;
+    }*******/
 
     /*********************************************************************
      METRIC SYSTEM
      **********************************************************************/
 
     //millimeter conversions
-    public static double miliToCenti(double begValue){
+    private static double miliToCenti(double begValue){
         double endValue = begValue / 10;
         return endValue;
     }
