@@ -5,10 +5,7 @@ public class UnitConversion {
 
     public static void main(String[] args) {
 
-        //TODO: TODO: Create GUI
-
-        //TEST
-        //TEST
+        //TODO: Create GUI
 
         Scanner input = new Scanner(System.in);
 
@@ -31,7 +28,7 @@ public class UnitConversion {
                 begUnit = input.nextInt();
 
                 if (begUnit < 1 || begUnit > 8) {
-                    System.out.print("Invalid option");
+                    System.out.println("Invalid option. ");
                 }
             }
 
@@ -39,11 +36,12 @@ public class UnitConversion {
             System.out.print("Select unit of measure to convert to: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  " +
                     "5 - inch  6 - feet  7 - yard  8 - mile: ");
             convUnit = input.nextInt();
-            if (begUnit < 1 || begUnit > 8) {
-                System.out.print("Invalid option");
+            if ((convUnit >= 1 && convUnit <= 8)) {
+                convert(begUnit, convUnit, begValue);
 
             } else {
-                convert(begUnit, convUnit, begValue);
+                System.out.println("Invalid option");
+                System.exit(0); //TODO: Correct this loop, so that it returns to ConvUnit instead of ending.
             }
         }
 
@@ -51,41 +49,72 @@ public class UnitConversion {
         switch(begUnit){
             case 1:
                 begUnitString = "millimeter(s)";
+                break;
             case 2:
                 begUnitString = "centimeter(s)";
+                break;
             case 3:
                 begUnitString = "meter(s)";
+                break;
             case 4:
                 begUnitString = "kilometer(s)";
+                break;
+
             case 5:
                 begUnitString = "inch(s)";
+                break;
+
             case 6:
                 begUnitString = "feet(s)";
+                break;
+
             case 7:
                 begUnitString = "yard(s)";
+                break;
+
             case 8:
                 begUnitString = "mile(s)";
+                break;
+
         }
+        System.out.println("begUnitstring" + begUnitString);
 
         String endUnitString = "";
-        switch(begUnit){
+        switch(convUnit){
             case 1:
-                begUnitString = "millimeter(s)";
+                endUnitString = "millimeter(s)";
+                break;
+
             case 2:
-                begUnitString = "centimeter(s)";
+                endUnitString = "centimeter(s)";
+                break;
+
             case 3:
-                begUnitString = "meter(s)";
+                endUnitString = "meter(s)";
+                break;
+
             case 4:
-                begUnitString = "kilometer(s)";
+                endUnitString = "kilometer(s)";
+                break;
+
             case 5:
-                begUnitString = "inch(es)";
+                endUnitString = "inch(es)";
+                break;
+
             case 6:
-                begUnitString = "feet";
+                endUnitString = "feet";
+                break;
+
             case 7:
-                begUnitString = "yard(s)";
+                endUnitString = "yard(s)";
+                break;
+
             case 8:
-                begUnitString = "mile(s)";
+                endUnitString = "mile(s)";
+                break;
+
         }
+        System.out.println("endUnitString" + endUnitString);
 
         double endValue = convert(begUnit, convUnit, begValue);
 
