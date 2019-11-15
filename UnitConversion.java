@@ -9,18 +9,16 @@ public class UnitConversion {
 
         Scanner input = new Scanner(System.in);
 
-        //Ask user to select metric or standard system - I DON"T THINK THIS IS NEEDED? THOUGHTS?****
         double begValue = 0;
         int begUnit = 0;
         int convUnit = 0;
 
-        while (begUnit < 1 || begUnit > 8) {    //TODO: Verify this loop works correctly
 
-            while (begUnit < 1 || begUnit > 8) {    //TODO: Verify this loop works correctly
-                //User enter number
-                System.out.print("Enter starting number: ");
-                begValue = input.nextDouble();
+        //User enter number
+        System.out.print("Enter starting number: ");
+        begValue = input.nextDouble();
 
+            while (begUnit < 1 || begUnit > 8) {
                 //User enter unit
                 System.out.print("Select original unit of measure: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  " +
                         "5 - inch  6 - feet  7 - yard  8 - mile: ");
@@ -32,16 +30,17 @@ public class UnitConversion {
                 }
             }
 
+            while (begUnit < 1 || begUnit > 8) {
             //User enter unit to convert to
-            System.out.print("Select unit of measure to convert to: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  " +
-                    "5 - inch  6 - feet  7 - yard  8 - mile: ");
-            convUnit = input.nextInt();
-            if ((convUnit >= 1 && convUnit <= 8)) {
-                convert(begUnit, convUnit, begValue);
+                System.out.print("Select unit of measure to convert to: 1 - millimeter 2 - centimeter  3 - meter  4 - kilometer  " +
+                        "5 - inch  6 - feet  7 - yard  8 - mile: ");
+                input.nextLine();
+                convUnit = input.nextInt();
 
-            } else {
-                System.out.println("Invalid option");
-                System.exit(0); //TODO: Correct this loop, so that it returns to ConvUnit instead of ending.
+                if (convUnit < 1 || convUnit > 8) {
+                    System.out.println("Invalid option. ");
+                }
+
             }
         }
 
