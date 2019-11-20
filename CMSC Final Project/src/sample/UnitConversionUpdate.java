@@ -1,7 +1,21 @@
 package sample;
+/******************************************************************************
+ * Final Project: Unit Conversion Tool
+ ****************************************************************************
+ * The purpose of the Unit Conversion Tool, is to take the initial value that a 
+ * user emters into the input area and then converts that given increment into
+ * the desired unit of measurement that the user deisred.
+ *______________________________________________________________________________
+ * Anne Szarek, Isaiah Crothers, Shaquan Hagans
+ * November 19th, 2019
+ * CMSC 255
+ ****************************************************************************/
 
 public class UnitConversionUpdate {
 
+    /********************************
+    * Declare the initial variables
+    ********************************/
     private double begValue;
     private int beginUnit;
     private int endUnit;
@@ -17,6 +31,10 @@ public class UnitConversionUpdate {
 
     }
 
+     /**********************************************************
+     * Convert initial values entered and assign them to 
+     * values used later in the code.
+     **********************************************************/
     public UnitConversionUpdate(double begValue, int beginUnit, int endUnit) {
 
         this.begValue = begValue;
@@ -25,6 +43,10 @@ public class UnitConversionUpdate {
 
     }
 
+     /**********************************************************
+     * Methods that estaablish setters and getters, that return
+     * and estabilish the values for the beginning and end values.
+     **********************************************************/
     public void setBegValue(double begValue) {
         this.begValue = begValue;
     }
@@ -49,6 +71,10 @@ public class UnitConversionUpdate {
         return endUnit;
     }
 
+     /**********************************************************
+     * Assign a string value to whichever number that the user
+     * entered.
+     **********************************************************/
     public String toString() {
 
         if (this.beginUnit == 1) {
@@ -107,6 +133,10 @@ public class UnitConversionUpdate {
              endUnitString = "Incorrect number input";
         }
 
+     /**********************************************************
+     * Create a final value that outputs to the output area      
+     * that reads the initial and final values of the code.
+     **********************************************************/
         endValue = convert(this.begValue, this.beginUnit, this.endUnit);
 
         return this.begValue + " " + begUnitString + " is equal to " + endValue + " " + endUnitString + ". :')";
